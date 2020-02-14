@@ -21,24 +21,31 @@ the solution is asynchronous callbacks
 
 ## What is a Javascript engine
 
-software that converts javascript code to machine code, then executed by CPU of machine. Each browser has different javascript engine, Chrome uses v8 engine, firefox uses spidermonkey, etc. 
-
-v8 is a multi-threaded program written in c++, 1 functionality -> convert code written to it into optimized machine code
+software that converts javascript code into fast, optimized machine code then executed by CPU of machine. Each browser has different javascript engine, Chrome uses v8 engine, firefox uses spidermonkey, etc. 
 
 employs a technique called "JIT / just in time" compilation (used in node as well)
 
+ termed as a kind of virtual machine. A virtual machine refers to the software-driven emulation of the given computer system. Javascript is a process virtual machine is less full-functional and can run one program
+
+ JavaScript Core performs a series of steps to interpret and optimize a script:
+1. It performs a lexical analysis, breaking down the source into a series of tokens.
+2. Four JIT processes then click on, analyzing and executing the bytecode produced by the parser.
+
+## how V8 works
+
+V8 is a multi-threaded program written in c++, 1 functionality -> convert code written to it into optimized machine code
+
+The V8 design consists of two compilers that compile source code directly into machine code.
+•  Full-codegen:  It is a fast compiler that produces unoptimized code
+•  Crankshaft: a slower compiler that produces fast and optimized code
+
+There are many threads in v8, such as compiler thread, main thread, profiler thread and garbage colleciton thread. 
 
 ## History of Javascript
 
 Javascript was mostly an interpreted language
 
 Every line is interpreted and executed one after the other
-
-it uses full-codegen to compile into machine code
-
-and crankshaft to optmize the machine code
-
-There are many threads in v8, such as compiler thread, main thread, profiler thread and garbage colleciton thread. 
 
 
 ## what is a call stack?

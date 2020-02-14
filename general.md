@@ -28,10 +28,13 @@ Not cross platform meaning you need to compile different sets of binaries for li
 
 
 
-## Intermediate Language (improvement on the current system)
+## intermediate Language (improvement on the current system)
 Other known as Bytecode,
 
 Programmers would now compile their code into bytecode (IL) and send that to the consumer, the IL has been slightly optimzed. IL will use the JIT Compiler to convert to even more optimzed machmachine code. 
+
+## JIT Compiling
+The JIT compiler compiles the bytecode of that method into native machine code, compiling it "just in time" to run. 
 
 
 ## Typical Compiled languages
