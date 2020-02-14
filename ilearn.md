@@ -31,7 +31,7 @@ employs a technique called "JIT / just in time" compilation (used in node as wel
 1. It performs a lexical analysis, breaking down the source into a series of tokens.
 2. Four JIT processes then click on, analyzing and executing the bytecode produced by the parser.
 
-## how V8 works
+## How V8 works
 
 V8 is a multi-threaded program written in c++, 1 functionality -> convert code written to it into optimized machine code
 
@@ -48,7 +48,7 @@ Javascript was mostly an interpreted language
 Every line is interpreted and executed one after the other
 
 
-## what is a call stack?
+## What is a call stack?
 
 a  to do list of function invocations , LIFO
 the main function is called at the beginning of every compilation. It is at the base of every call stack. 

@@ -8,7 +8,8 @@ The purpose of software is for other people to use.
 
 When executing code, 
 
-Compiled languages convert source code to binary execetuables FIRST before sending to it a user. The entire binary is in its executable form, ready for the computer to execute. 
+Compiled languages convert source code to binary execetuables FIRST before sending to it a user. The entire binary is in its executable form, ready for the computer to execute. \
+
 Interpreted languages send the orginal source code, and the interpretor goes thru 1 line at a time, converting each line to its binary equivalent, each line is executed.
 
 Not cross platform meaning you need to compile different sets of binaries for linux, mac and windows systems as they are read binaries differently. 
@@ -28,7 +29,7 @@ Not cross platform meaning you need to compile different sets of binaries for li
 
 
 
-## intermediate Language (improvement on the current system)
+## Intermediate Language (improvement on the current system)
 Other known as Bytecode,
 
 Programmers would now compile their code into bytecode (IL) and send that to the consumer, the IL has been slightly optimzed. IL will use the JIT Compiler to convert to even more optimzed machmachine code. 
