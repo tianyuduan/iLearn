@@ -1,6 +1,6 @@
-# GENERAL
+# General CS Concepts
 
-## Interpreted vs Compiled language
+## Interpreted vs Compiled Language
 
 The purpose of software is for other people to use. 
 
@@ -8,7 +8,7 @@ The purpose of software is for other people to use.
 
 When executing code, 
 
-Compiled languages convert source code to binary execetuables FIRST before sending to it a user. The entire binary is in its executable form, ready for the computer to execute. \
+Compiled languages convert source code to binary execetuables FIRST before sending to it a user. The entire binary is in its executable form, ready for the computer to execute. 
 
 Interpreted languages send the orginal source code, and the interpretor goes thru 1 line at a time, converting each line to its binary equivalent, each line is executed.
 
