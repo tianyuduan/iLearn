@@ -60,13 +60,23 @@ Once a variable has been declared a type, it cannot be assigned to a different t
 
 Static typing usually results in compiled code that executes more quickly because when the compiler knows the exact data types that are in use, it can produce optimized machine code (i.e. faster and/or using less memory)
 
+```
+int data;
+data = 50;
+data = “Hello World!”; // causes an compilation error
+```
+
 ### Dynamic 
 common example: JavaScript, Objective-C, PHP, Python, Ruby, Lisp, and Tcl
+
 Variables are bound to objects instead at run-time, which it makes it possible  to assign
 different types to the same variable
 
 Is less optimized, but no compilation step means shorter debug cycles
-
+```
+data = 10;
+data = “Hello World!”; // no error caused
+```
 
 ### Strongly Typed
 A strongly-typed language is one in which variables are bound to specific data types, and will result in type errors if types do not match up as expected in the expression — regardless of when type checking occurs.
@@ -85,8 +95,6 @@ $temp = “Hello World!”;
 $temp = $temp + 10; // no error caused
 echo $temp;
 ```
-
-
 
 ![Image of the 4](https://miro.medium.com/max/1648/1*BddwVWW6hFU0miT9DCbUWQ.png)
 
