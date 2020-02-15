@@ -44,3 +44,49 @@ C, C++, Objective C
 
 ## Typical interpreted languages
 php, javascript, java, C#, Python
+
+
+## Explain Dynamic, Strongly, Weak and Statically typed languages
+
+The process of verifying and enforcing constraints of type, boils down to 
+checking at COMPILE (STATIC) or RUN-TIME (DYNAMIC)
+
+If a language specification requires its typing rules strongly (i.e., more or less allowing only those automatic type conversions that do not lose information), one can refer to the process as Strongly typed, if not, as Weakly typed.
+
+### Static 
+
+common examples: java, C, C++
+Once a variable has been declared a type, it cannot be assigned to a different type
+
+Static typing usually results in compiled code that executes more quickly because when the compiler knows the exact data types that are in use, it can produce optimized machine code (i.e. faster and/or using less memory)
+
+### Dynamic 
+common example: JavaScript, Objective-C, PHP, Python, Ruby, Lisp, and Tcl
+Variables are bound to objects instead at run-time, which it makes it possible  to assign
+different types to the same variable
+
+Is less optimized, but no compilation step means shorter debug cycles
+
+
+### Strongly Typed
+A strongly-typed language is one in which variables are bound to specific data types, and will result in type errors if types do not match up as expected in the expression — regardless of when type checking occurs.
+
+```
+temp = “Hello World!”
+temp = temp + 10; // program terminates with below stated error
+```
+
+### Weakly Typed
+
+A weakly-typed language on the other hand is a language in which variables are not bound to a specific data type; they still have a type, but type safety constraints are lower compared to strongly-typed languages.
+
+```
+$temp = “Hello World!”;
+$temp = $temp + 10; // no error caused
+echo $temp;
+```
+
+
+
+![Image of the 4](https://miro.medium.com/max/1648/1*BddwVWW6hFU0miT9DCbUWQ.png)
+
