@@ -1,8 +1,6 @@
-#iLearn
+# JavaScript
 
-## Javascript
-
-### Understanding Javascript 
+### Understanding JavaScript 
 
 There are APIs in the browser that have been used by almost any JavaScript developer out there (e.g. “setTimeout”). Those APIs, however, are not provided by the Engine.
 
@@ -53,7 +51,60 @@ Every line is interpreted and executed one after the other
 a  to do list of function invocations , LIFO
 the main function is called at the beginning of every compilation. It is at the base of every call stack. 
 
+# Defining Functions in JavaScript
 
+## Function declaration
+function name (1, 2, 3) {
+  statement
+}
+
+## Function expression
+function [name] (1, 2, 3, ) {
+  statement
+}
+
+Anonymous function
+```
+var myFunction = function() {
+    statements
+}
+```
+
+named function
+```
+var myFunction = function namedFunction(){
+    statements
+}
+```
+
+invoked once
+```
+(function() {
+    statements
+})();
+```
+
+
+generator functions
+```
+function* name([param[, param[, ... param]]]) {
+   statements
+}
+```
+
+## Arrow functions
+arrow function syntax is simply Identifier => Expression.
+You get to skip typing function and return, as well as some parentheses, braces, and a semicolon.
+
+Arrow functions do not have their own this value. The value of this inside an arrow function is always inherited from the enclosing scope.
+
+function (a, b) {
+  return a + b;
+};
+
+equivalent to
+
+(a, b) => a + b;
 
 
 
