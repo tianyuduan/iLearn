@@ -106,5 +106,12 @@ equivalent to
 
 (a, b) => a + b;
 
+## Event loop
+look at stack and look at task queue, if stack is EMPTY, it take executables from the task queue and pushes it at the stack 
 
+executables are pushed to task queue are when executables need to be done asychronously  
+
+task queue can be split into render queue and callback queue
+
+render queue has higher prioirty then callback queue but needs stack to be clear to run
 
