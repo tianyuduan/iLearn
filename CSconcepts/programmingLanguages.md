@@ -1,5 +1,9 @@
 # General CS Concepts
 
+## Functional Programming
+is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects. Functional programming is declarative rather than imperative, and application state flows through pure functions. Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects.
+
+
 ## Interpreted vs Compiled Language
 
 The purpose of software is for other people to use. 
