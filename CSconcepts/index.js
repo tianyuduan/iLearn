@@ -41,3 +41,6 @@ const string = new String();
 // javscript assigns a default constructor to objects when not specfically declared
 // every object has a constructor property and it references the function that was 
 // used to create the object
+
+
+console.log('hi');
