@@ -43,4 +43,31 @@ const string = new String();
 // used to create the object
 
 
-console.log('hi');
+// Constructor function
+function Person(height, occupation, name) {
+    this.height = height;
+    this.occupation = occupation;
+    this.name = name;
+    this.myName = function() {
+        console.log('my name is ' + this.name);
+    }
+    this.myHeight = function () {
+        console.log('my height is ' + this.height);
+    }
+    this.myOccupation = function () {
+        console.log('my occupation is ' + this.occupation);
+    }
+}
+
+const andrew = new Person(168, 'doctor', 'andrew');
+const shirley = new Person(153, 'data scientist', 'shirley');
+Person.prototype.language = 'english';
+Person.prototype.myLanguage = function() {
+    console.log('my language is ' + this.language);
+}
+
+// new property is now shared among all instances of Person. 
+// Person.prototype will have all the objects assigned with .prototype + constructor function 
+
+//Encapsulation -  using a constructor function to encapsulate/enclose all the functionalities of a person., then using that constructor to create 
+//objects

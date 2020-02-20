@@ -1,13 +1,11 @@
-# Object Oriented Programming
+# Object Oriented Programming && JavaScript
 
-Programming paradigm based on the concept of 'objects' that contain data, in form of  fields and code in the form of methods 
-
-refer to variables as properties/fields
-and functions as methods 
+OOP is a programming paradigm based on the concept of 'objects' that contain data, in form of  fields and code in the form of methods.
+(Variables as properties/fields and functions as methods)
 
 **Objects** can be though of as main building blocks that do all the work. Objects are everywhere in JavaScript, since evey component of javascript is an object, including Functions, Strings and Numbers. 
 
-A **constructor** is a function that initializes an object. In JavaScript the constructors are more similar to normal java constructor, in times needing a 'blueprint' for creating many objects of the same 'type'.
+A **Constructor** is a function that initializes an object. In JavaScript the constructors are more similar to normal java constructor, in times needing a 'blueprint' for creating many objects of the same 'type'.
 
  ```
  function Person(first, last, age, eye) {
@@ -18,14 +16,14 @@ A **constructor** is a function that initializes an object. In JavaScript the co
 }
 ```
 
-Built-in constructors 
+Built-in Constructors 
 ```
 var x1 = new Object();    // A new Object object
 var x2 = new String();    // A new String object
 ```
 
 
-We can use Object literals and Constructor functions to CREATE Object. 
+We can use Object literals and Constructor functions to CREATE Objects. 
 
 Object Literal Method
 ```
@@ -55,18 +53,25 @@ const another = new Circle(1);
 
 You can not add a new property to an existing object constructor without modifying the constructor itself. All JavaScript objects inherit properties and methods from a prototype.
 
-The JavaScript prototype property allows you to add new properties to object constructors, doing so allows for faster object creation and it will apply it not only to the class, but also any current object instances of that class.
+All objects have a prototype function. 
+
+The JavaScript prototype property allows you to add new properties to object constructors, doing so allows for faster object creation and it will apply it not only to the class, but also any current object instances of that class. Doing so also makes use of less copy & pasta code, no need to repeat certain functions each time, at instanitiation. 
+
+
+Calling prototype allows you to see all the built-in properties. Constructor function will point back to Object() function. 
 
 ```
 function Person(first, last, age, eyecolor) {
   this.firstName = first;
   this.lastName = last;
   this.age = age;
-  this.eyeColor = eyecolor;
+  this.eyeColor = eyecolor;dd
 }
 
 Person.prototype.nationality = "English";
 ```
+
+__proto__ points back to Object.prototype
 
 **Encapsulation** refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
 
