@@ -7,7 +7,7 @@ and functions as methods
 
 Objects can be though of as main building blocks that do all the work. Objects are everywhere in JavaScript, since evey component of javascript is an object, including Functions, Strings and Numbers. 
 
-We can use Object literals and constructor functions to CREATE Object. 
+We can use Object literals and Constructor functions to CREATE Object. 
 
 Object Literal Method
 ```
@@ -35,10 +35,14 @@ function Circle(radius) {
 const another = new Circle(1);
 ```
 
-Encapsulation refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
+**Encapsulation** refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
+
+**Why Encapsulation?** 
+When you want to create object to store some data, only object of its kind, then object literals are a good idea. 
+If you want to create objects with similar functionalities , you encapsulate the main functionalities in a Function and you use that Function’s constructor to create the objects. 
 
 
-Inheritance refers to an object being able to inherit methods and properties from a parent object
+**Inheritance** refers to an object being able to inherit methods and properties from a parent object
 
 
 
