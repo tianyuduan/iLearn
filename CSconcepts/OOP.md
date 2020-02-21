@@ -1,6 +1,6 @@
 # Object Oriented Programming && JavaScript
 
-OOP is a programming paradigm based on the concept of 'objects' that contain data, in form of  fields and code in the form of methods.
+**OOP** is a programming paradigm based on the concept of 'objects' that contain data, in form of  fields and code in the form of methods.
 (Variables as properties/fields and functions as methods)
 
 **Objects** can be though of as main building blocks that do all the work. Objects are everywhere in JavaScript, since evey component of javascript is an object, including Functions, Strings and Numbers. 
@@ -16,7 +16,7 @@ A **Constructor** is a function that initializes an object. In JavaScript the co
 }
 ```
 
-Built-in Constructors 
+nbsp; Built-in Constructors 
 ```
 var x1 = new Object();    // A new Object object
 var x2 = new String();    // A new String object
@@ -24,7 +24,7 @@ var x2 = new String();    // A new String object
 
 We can use Object literals and Constructor functions to CREATE Objects. 
 
-Object Literal Method
+nbsp; Object Literal Method
 ```
 function createCircle(radius) {
     return {
@@ -38,7 +38,7 @@ function createCircle(radius) {
 const circle2 = createCircle(1);
 ```
 
-Constructor Method (require new keyword to invoke it)
+nbsp; Constructor Method (require new keyword to invoke it)
 ```
 function Circle(radius) {
     //reference to object executing this code
