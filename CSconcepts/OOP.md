@@ -52,7 +52,7 @@ const another = new Circle(1);
 
 You can not add a new property to an existing object constructor without modifying the constructor itself. So how would you add a property to the constructor function without modifiying it?
 
-In comes the **prototype**.
+In comes the **prototype**. The prototype is an object that is associated with every functions and objects by default in JavaScript.
 
 All JavaScript objects inherit properties and methods from a prototype, thus, each Object has a private property that holds a link to another object called its Prototype. 
 
@@ -69,12 +69,15 @@ function Person(first, last, age, eyecolor) {
   this.eyeColor = eyecolor;dd
 }
 
-Person.prototype.nationality = "English";
+Person.prototype.language = "English";
+const andrew = new Person(168, 'doctor', 'andrew');
+andrew.language // returns english 
+
 ```
  
 ```__proto__``` points back to X.prototype(prototype chain), use on instantiation of the object. 
 
-
+Here is an image to show the connection: 
 ![alt image](https://i.stack.imgur.com/UfXRZ.png)
 
 **Encapsulation** refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
