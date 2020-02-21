@@ -22,7 +22,6 @@ var x1 = new Object();    // A new Object object
 var x2 = new String();    // A new String object
 ```
 
-
 We can use Object literals and Constructor functions to CREATE Objects. 
 
 Object Literal Method
@@ -51,9 +50,9 @@ function Circle(radius) {
 const another = new Circle(1);
 ```
 
-You can not add a new property to an existing object constructor without modifying the constructor itself. All JavaScript objects inherit properties and methods from a prototype.
+You can not add a new property to an existing object constructor without modifying the constructor itself. All JavaScript objects inherit properties and methods from a prototype, thus, Each Object has a private property that holds a link to another object called its Prototype. 
 
-All objects have a prototype function. 
+That Prototype also has its own prototype and so on, until it points to null as its prototype. Null has no prototype, so acts as the final link to the **prototype chain**. 
 
 The JavaScript prototype property allows you to add new properties to object constructors, doing so allows for faster object creation and it will apply it not only to the class, but also any current object instances of that class. Doing so also makes use of less copy & pasta code, no need to repeat certain functions each time, at instanitiation. 
 
@@ -70,8 +69,11 @@ function Person(first, last, age, eyecolor) {
 
 Person.prototype.nationality = "English";
 ```
+ 
+```__proto__``` points back to X.prototype(prototype chain), use on instantiation of the object. 
 
-__proto__ points back to Object.prototype
+
+![alt image](https://i.stack.imgur.com/UfXRZ.png)
 
 **Encapsulation** refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
 
@@ -83,6 +85,10 @@ If you want to create objects with similar functionalities, you encapsulate the 
 
 
 **Inheritance** refers to an object being able to inherit methods and properties from a parent object
+
+*** Inheritance with the prototype chain
+
+
 
 
 
