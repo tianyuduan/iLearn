@@ -96,6 +96,9 @@ Person.prototype.constructor === Person // true
 >prototype is used by constructor() functions. It should've really been called something like, "prototypeToInstall", since that's what it is.
 >and __proto__ is that "installed prototype" on an object (that was created/installed upon the object from said constructor() function)
 
+
+## OOP 
+
 **Encapsulation** refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
 
 
@@ -104,13 +107,38 @@ Person.prototype.constructor === Person // true
 When you want to create object to store some data, only object of its kind, then object literals are a good idea. 
 If you want to create objects with similar functionalities, you encapsulate the main functionalities in a Function and you use that Function’s constructor to create the objects. 
 
+```
+function Product(name, price) {  this.name = name;  this.price = price;}
+
+const bread = new Product('bread', 1);bread.price = -10;
+```
+
+Notice the use of variable this vs getName & getPrice = 5. If you do the latter, you are given full access to the properties from outside. So everyone can modify it. 
+
+**objects “encapsulate” their data and prevent other objects from accessing the data directly. The only way to access the data is indirect via the functions written into the objects.**
+
 
 **Inheritance** refers to an object being able to inherit methods and properties from a parent object
 
-*** Inheritance with the prototype chain
+>Inheritance lets you create a new class by extending an existing class with additional properties and functions. The new class “inherits” all of the >features of its parent, avoiding the creation of new code from scratch. Furthermore, any changes made to the parent class will automatically be >available to the child class. This makes updates much easier.
 
+```
+function Book(_name, _price, _author) {  
+    Product.call(this, _name, _price);  
+    const author = _author;    
+    this.getAuthor = function() {    
+        return author; 
+         }
+    }
 
+const faust = new Book('faust', 12.5, 'Goethe');basket.addProduct(1, faust);
+```
 
+Basket expects an object of type Product. Since book inherits from Product through Book, it is also a Product.
+
+Lesson: Subclasses can inherit properties and functions from superclasses while adding properties and functions of their own.
+
+## Abstraction 
 
 
 # Summary
