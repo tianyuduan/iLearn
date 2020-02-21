@@ -16,7 +16,7 @@ A **Constructor** is a function that initializes an object. In JavaScript the co
 }
 ```
 
-nbsp; Built-in Constructors 
+&nbsp; Built-in Constructors 
 ```
 var x1 = new Object();    // A new Object object
 var x2 = new String();    // A new String object
@@ -24,7 +24,7 @@ var x2 = new String();    // A new String object
 
 We can use Object literals and Constructor functions to CREATE Objects. 
 
-nbsp; Object Literal Method
+&nbsp; Object Literal Method
 ```
 function createCircle(radius) {
     return {
@@ -38,7 +38,7 @@ function createCircle(radius) {
 const circle2 = createCircle(1);
 ```
 
-nbsp; Constructor Method (require new keyword to invoke it)
+&nbsp; Constructor Method (require new keyword to invoke it, as well as, setting the constructor property in the instance)
 ```
 function Circle(radius) {
     //reference to object executing this code
@@ -50,14 +50,16 @@ function Circle(radius) {
 const another = new Circle(1);
 ```
 
-You can not add a new property to an existing object constructor without modifying the constructor itself. All JavaScript objects inherit properties and methods from a prototype, thus, Each Object has a private property that holds a link to another object called its Prototype. 
+You can not add a new property to an existing object constructor without modifying the constructor itself. So how would you add a property to the constructor function without modifiying it?
+
+In comes the **prototype**.
+
+All JavaScript objects inherit properties and methods from a prototype, thus, each Object has a private property that holds a link to another object called its Prototype. 
 
 That Prototype also has its own prototype and so on, until it points to null as its prototype. Null has no prototype, so acts as the final link to the **prototype chain**. 
 
-The JavaScript prototype property allows you to add new properties to object constructors, doing so allows for faster object creation and it will apply it not only to the class, but also any current object instances of that class. Doing so also makes use of less copy & pasta code, no need to repeat certain functions each time, at instanitiation. 
+The JavaScript prototype property allows you to add new properties to object constructors, doing so allows for faster object creation and it will apply it not only to the class, but also any current object instances of that class. Doing so also makes use of less copy & pasta code, no need to repeat certain functions each time, instead, we use prototypes as a reference to that function when its needed. 
 
-
-Calling prototype allows you to see all the built-in properties. Constructor function will point back to Object() function. 
 
 ```
 function Person(first, last, age, eyecolor) {
