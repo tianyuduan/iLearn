@@ -66,19 +66,35 @@ function Person(first, last, age, eyecolor) {
   this.firstName = first;
   this.lastName = last;
   this.age = age;
-  this.eyeColor = eyecolor;dd
+  this.eyeColor = eyecolor;
 }
 
 Person.prototype.language = "English";
-const andrew = new Person(168, 'doctor', 'andrew');
+const andrew = new Person('andrew, 'smith', '27', 'brown);
 andrew.language // returns english 
 
 ```
- 
-```__proto__``` points back to X.prototype(prototype chain), use on instantiation of the object. 
+
 
 Here is an image to show the connection: 
 ![alt image](https://i.stack.imgur.com/UfXRZ.png)
+
+
+## Understanding prototype methods
+
+```__proto__``` points back to X.prototype(prototype chain), usable only on the instantiation of an object. (object used in lookup chain)
+.prototype lists all the prototypes assigned to the Object as well as the constructor function itself, in reference to where it came from. (objected use to build ```__proto___``` when used with new)
+
+Thus,
+```
+andrew.__proto__ === Person.prototype // true
+
+Person.prototype.constructor === Person // true
+```
+
+>A nice way to think of it is...
+>prototype is used by constructor() functions. It should've really been called something like, "prototypeToInstall", since that's what it is.
+>and __proto__ is that "installed prototype" on an object (that was created/installed upon the object from said constructor() function)
 
 **Encapsulation** refers to enclosing all the functionalities of an object within that object so that the object’s internal workings (its methods and properties) are hidden from the rest of the application. This allows us to abstract or localize specific set of functionalities on objects.
 
