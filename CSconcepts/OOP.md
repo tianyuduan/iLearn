@@ -136,7 +136,7 @@ const faust = new Book('faust', 12.5, 'Goethe');basket.addProduct(1, faust);
 
 Basket expects an object of type Product. Since book inherits from Product through Book, it is also a Product.
 
-Lesson: Subclasses can inherit properties and functions from superclasses while adding properties and functions of their own.
+**Subclasses can inherit properties and functions from superclasses while adding properties and functions of their own.**
 
 ## Abstraction 
 
@@ -165,8 +165,12 @@ he ability of multiple object types to implement the same functionality is polym
 
 sharing some similiarties but having different implementation
 
+In object-oriented programming, polymorphism refers to a programming language's ability to process objects differently depending on their data type or class. More specifically, it is the ability to redefine methods for derived classes.
+
+Inherited Particle and confetti class, but the compiler knowing which 1 to render at compile time.
+
 ## Inheritance 
- It is the mechanism  by which one class is allow to inherit the features(fields and methods) of another class.
+ It is the mechanism  by which one class is allow to inherit the features(fields and methods) of another class, but modified with its own custom properties. 
 
 ### Examples
 
@@ -178,5 +182,33 @@ body functions: walk() sleep()
 Object is an instance of a class which has physical existance 
 
 
+## Abstraction 
 
+Abstraction is a process whereby you hide implementation details from the developer and 
+instead only provide the functionality
 
+1. hide irreleveant details
+2. generalize by identifying the common essence
+
+History of abstraction is the history of adding levels of abstraction. 
+
+Electro flux is an illusion of 1s and Os
+Assembly was a language to cope with the unbearableness of 1s and Os
+Memory, CPU usage
+infinty levels of abstraction allows for what we do today, like video, streaming, etc
+
+// hide details of API call, just need to post to facebook
+
+function postToFaceook(msg) {
+    const apiClient : KEY
+    const: TEXT
+    const status
+    return status;
+}
+
+vs
+
+const facebookAPIClient = XXX + Key
+facebookAPIClient.postMessage(text);
+
+you can abstract again, where we abstract postToFacebook into postToSocialMedia to handle twitter, linkedin, etc

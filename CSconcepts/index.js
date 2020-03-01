@@ -71,3 +71,11 @@ Person.prototype.myLanguage = function() {
 
 //Encapsulation -  using a constructor function to encapsulate/enclose all the functionalities of a person., then using that constructor to create 
 //objects
+
+var a;
+var b;
+var c;
+function alert() {
+    console.log('hi');
+    
+}

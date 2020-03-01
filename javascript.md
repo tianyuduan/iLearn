@@ -115,3 +115,13 @@ task queue can be split into render queue and callback queue
 
 render queue has higher prioirty then callback queue but needs stack to be clear to run
 
+
+## Object.Create 
+The Object.create() method creates a new object, using an existing object as the **prototype** of the newly created object.
+
+
+ This is due to the important difference that new Dog actually runs constructor code, 
+ whereas Object.create will not execute the constructor code.
+
+
+The Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
