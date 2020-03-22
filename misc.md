@@ -10,4 +10,4 @@ can set breakpoints in vs code
 can change state, values, pause stack
 
 
-https://github.com/Microsoft/vscode-chrome-debug
+https://github.com/Microsoft/vscode-chrome-debug 
